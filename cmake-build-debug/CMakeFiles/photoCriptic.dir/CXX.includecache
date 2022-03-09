@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jk/Programming/CLionProjects/photoCriptic/Analizator.h
+cstdint
+-
+iostream
+-
+
+/Users/jk/Programming/CLionProjects/photoCriptic/Obliczator.h
+cstdio
+-
+iostream
+-
+chrono
+-
+thread
+-
+cstdlib
+-
+
+/Users/jk/Programming/CLionProjects/photoCriptic/main.cpp
+Obliczator.h
+/Users/jk/Programming/CLionProjects/photoCriptic/Obliczator.h
+Analizator.h
+/Users/jk/Programming/CLionProjects/photoCriptic/Analizator.h
+
