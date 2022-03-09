@@ -11,16 +11,16 @@ int main() {
     int twoja_stara[8][8];
     int test[8][8];
     randGenerator(twoja_stara);
-//    showArr(twoja_stara);
-    randGenerator(test);
-    zeroGenerate(test);
-    showArr(test);
+    showArr(twoja_stara);
+//    randGenerator(test);
+//    zeroGenerate(test);
+//    showArr(test);
     space;
 
     {
         std::unique_ptr<Obliczator> oblicz = std::make_unique<Obliczator>();
-        oblicz->tabInputParser(twoja_stara);
-        oblicz->tabInputShow();
+//        oblicz->encode(twoja_stara);
+        oblicz->decode(twoja_stara);
 //        std::unique_ptr<Analizator> analizuj = std::make_unique<Analizator>();
 //        space;
 //        std::cout<<analizuj->retChar(oblicz->retCharacteristicNumber());
@@ -31,9 +31,9 @@ int main() {
 //        std::cout<<analizuj->retInt('t');
         space;
 //        oblicz->targetToBinary(15);
-        int a = 12;
+        int a = 47;
         std::cout<<"target characteristic number is: "<<a<<"\n";
-        oblicz->intInputParser(a);
+        oblicz->encode(a, twoja_stara);
         space;
 //        oblicz->intShow();
 
